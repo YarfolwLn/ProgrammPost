@@ -26,12 +26,29 @@
 
 1. **Клонируйте или скачайте проект**
 
-2. **Установите зависимости:**
+2. **Создайте виртуальное окружение:**
+```bash
+python -m venv venv
+```
+
+3. **Активируйте виртуальное окружение:**
+
+**macOS/Linux:**
+```bash
+source venv/bin/activate
+```
+
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+4. **Установите зависимости:**
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Настройте API ключи:**
+5. **Настройте API ключи:**
 
 Скопируйте файл `.env.example` в `.env`:
 ```bash
@@ -77,9 +94,21 @@ INSTAGRAM_PASSWORD=your_instagram_password
 
 ### Запуск приложения
 
+**Важно:** Сначала активируйте виртуальное окружение, затем запускайте приложение:
+
+**macOS/Linux:**
 ```bash
+source venv/bin/activate
 python main.py
 ```
+
+**Windows:**
+```bash
+venv\Scripts\activate
+python main.py
+```
+
+Для выхода из виртуального окружения используйте команду `deactivate`.
 
 ### Вкладки приложения
 
